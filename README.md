@@ -16,3 +16,19 @@ This repository contains the implementation of an air quality sensor system usin
 - **Memory**: 1-Mb EEPROM
 - **Communication Protocols**: I2C, UART
 - **LED**: Indicator for high dust concentration
+
+## Installation
+1. Clone the repository:
+git clone https://github.com/yourusername/air-quality-sensor.git
+2. Navigate to the project directory:
+3. Follow the setup instructions in the `README.md` for hardware connections and software dependencies.
+
+## Usage (TBD)
+1. **Data Reading**: The system reads air quality data every 30 seconds from the dust sensor.
+2. **Data Storage**: The data, along with timestamps, is stored sequentially in the EEPROM.
+3. **Data Retrieval**: Access the stored data via a terminal emulator. Use the following commands:
+- `LAST_HOUR`: Displays data from the last hour.
+- `LAST_DAY`: Displays data from the last day.
+- `ALL_DATA`: Displays all stored data.
+4. **LED Indicator**: The LED flashes if the dust concentration exceeds 200 PPM.
+
