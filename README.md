@@ -21,7 +21,6 @@ This repository contains the implementation of an air quality sensor system usin
 1. Clone the repository:
 git clone https://github.com/yourusername/air-quality-sensor.git
 2. Navigate to the project directory:
-3. Follow the setup instructions in the `README.md` for hardware connections and software dependencies.
 
 ## Usage (TBD)
 1. **Data Reading**: The system reads air quality data every 30 seconds from the dust sensor.
