@@ -1,2 +1,3 @@
-2024/07/22-10:28:18.666 5480 Creating DB C:\Users\NicholasMascioli\CodePractice\Project Folder\Air-Quality-Sensor\Workspace\.jxbrowser.userdata\Default\shared_proto_db\metadata since it was missing.
-2024/07/22-10:28:18.683 5480 Reusing MANIFEST C:\Users\NicholasMascioli\CodePractice\Project Folder\Air-Quality-Sensor\Workspace\.jxbrowser.userdata\Default\shared_proto_db\metadata/MANIFEST-000001
+2024/07/23-09:04:55.767 910 Reusing MANIFEST C:\Users\NicholasMascioli\CodePractice\Project Folder\Air-Quality-Sensor\Workspace\.jxbrowser.userdata\Default\shared_proto_db\metadata/MANIFEST-000001
+2024/07/23-09:04:55.772 910 Recovering log #3
+2024/07/23-09:04:55.772 910 Reusing old log C:\Users\NicholasMascioli\CodePractice\Project Folder\Air-Quality-Sensor\Workspace\.jxbrowser.userdata\Default\shared_proto_db\metadata/000003.log 
