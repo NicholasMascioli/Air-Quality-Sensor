@@ -8,7 +8,10 @@
 #ifndef EEPROM_H_
 #define EEPROM_H_
 
+#include "ti_drivers_config.h"
 
+
+#define TYPE_ID 0xA
 
 
 
