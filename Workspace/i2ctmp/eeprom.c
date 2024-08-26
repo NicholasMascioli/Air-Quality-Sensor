@@ -18,7 +18,6 @@
 
 
 bool eeprom_write_byte          (uint32_t address, uint8_t byte ){
-    //MAKING SURE STUFF IS UPDATING
     return false;
 }
 

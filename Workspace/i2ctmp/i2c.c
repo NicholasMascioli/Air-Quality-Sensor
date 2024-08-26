@@ -16,8 +16,6 @@
 #define PLACER 0
 #define WRITE_PROTECT 0
 
-    //MAKING SURE STUFF IS UPDATING
-    //MAKING SURE STUFF IS UPDATING
 
 static I2C_Handle i2c = NULL;
 

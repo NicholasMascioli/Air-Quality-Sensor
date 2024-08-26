@@ -29,9 +29,4 @@ bool eeprom_clear_page          (uint16_t page, uint8_t address, uint8_t size );
 bool eeprom_clear_all           (void);
 
 
-//MAKING SURE STUFF IS UPDATING
-//MAKING SURE STUFF IS UPDATING
-//MAKING SURE STUFF IS UPDATING
-
-
 #endif /* EEPROM_H_ */
