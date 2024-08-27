@@ -12,8 +12,8 @@
 #include "ti_drivers_config.h"
 
 
+bool i2c_init(void);
 bool i2c_write(uint8_t address, uint8_t *txBytes,  uint8_t count);
 bool i2c_read(uint8_t address, uint8_t *txBytes, uint8_t *rxBytes, uint8_t write_count, uint8_t read_count);
-bool i2c_init(void);
 
 #endif

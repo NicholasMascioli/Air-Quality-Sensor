@@ -26,7 +26,7 @@ bool eeprom_read_byte           (uint32_t address, uint8_t *byte);
 bool eeprom_read_sequential     (uint32_t address, uint8_t *byte, uint32_t size);
 
 bool eeprom_clear_byte          (uint32_t address);
-bool eeprom_clear_page          (uint16_t page, uint8_t address, uint8_t size);
+bool eeprom_clear_page          (uint16_t page);
 bool eeprom_clear_all           (void);
 
 
