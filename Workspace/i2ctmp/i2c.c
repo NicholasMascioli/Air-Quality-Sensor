@@ -31,7 +31,7 @@ bool i2c_init(void){
     i2cParams.transferCallbackFxn = NULL;
     i2cParams.custom = NULL;
 
-    i2c = I2C_open(PLACER, &i2cParams);
+    i2c = I2C_open(CONFIG_I2C_TMP, &i2cParams);
 
     return i2c;
 }

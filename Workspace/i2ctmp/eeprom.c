@@ -139,7 +139,7 @@ bool eeprom_clear_byte(uint32_t address)
 {
     bool flag;
 
-    flag=eeprom_write_byte(address,0);
+    flag = eeprom_write_byte(address,0);
 
     return flag;
 }
@@ -151,7 +151,7 @@ bool eeprom_clear_page(uint16_t page)
     uint8_t *tx_data = (uint8_t*)malloc(256 * sizeof(uint8_t));
     memset(tx_data, 0, 256 * sizeof(uint8_t));
 
-    flag=eeprom_write_page(page,0,tx_data,255);
+    flag = eeprom_write_page(page,0,tx_data,255);
 
     return false;
 }
@@ -160,8 +160,8 @@ bool eeprom_clear_all(void)
 {
     bool flag;
 
-    for(int i=0;i<1023;i++){
-        flag|=eeprom_clear_page(i);
+    for(int i = 0;i < 1023;i++){
+        flag |= eeprom_clear_page(i);
     }
 
     return false;
