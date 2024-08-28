@@ -26,7 +26,7 @@ bool i2c_init(void){
 
     I2C_Params i2cParams;
 
-    i2cParams.bitRate = I2C_400kHz;
+    i2cParams.bitRate = I2C_100kHz;
     i2cParams.transferMode = I2C_MODE_BLOCKING;
     i2cParams.transferCallbackFxn = NULL;
     i2cParams.custom = NULL;

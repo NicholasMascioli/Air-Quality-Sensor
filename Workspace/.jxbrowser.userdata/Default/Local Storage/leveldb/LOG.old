@@ -1,3 +1,5 @@
-2024/08/27-12:21:31.633 4eb8 Reusing MANIFEST C:\Users\NicholasMascioli\CodePractice\Project Folder\Air-Quality-Sensor\Workspace\.jxbrowser.userdata\Default\Local Storage\leveldb/MANIFEST-000001
-2024/08/27-12:21:31.634 4eb8 Recovering log #12
-2024/08/27-12:21:31.634 4eb8 Reusing old log C:\Users\NicholasMascioli\CodePractice\Project Folder\Air-Quality-Sensor\Workspace\.jxbrowser.userdata\Default\Local Storage\leveldb/000012.log 
+2024/08/28-09:31:02.804 4e54 Reusing MANIFEST C:\Users\NicholasMascioli\CodePractice\Project Folder\Air-Quality-Sensor\Workspace\.jxbrowser.userdata\Default\Local Storage\leveldb/MANIFEST-000001
+2024/08/28-09:31:02.812 4e54 Recovering log #12
+2024/08/28-09:31:02.813 4e54 Level-0 table #15: started
+2024/08/28-09:31:02.816 4e54 Level-0 table #15: 26111 bytes OK
+2024/08/28-09:31:02.817 4e54 Delete type=0 #12

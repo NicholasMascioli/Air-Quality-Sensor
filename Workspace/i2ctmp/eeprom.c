@@ -87,7 +87,11 @@ bool eeprom_read_byte(uint32_t address, uint8_t *byte )
     bool flag;
     uint8_t *tx_data = (uint8_t*)malloc(2 * sizeof(uint8_t));
 
-    address = (address-1) & EEPROM_ADR_MASK;
+    if(address==0){
+        address=EEPROM_ADR_MASK;
+    }else{
+        address = (address-1) & EEPROM_ADR_MASK;
+    }
 
     uint8_t adr = EEPROM_TYPE_ID | ((address >> 16) << 1) | EEPROM_WRITE;
 
@@ -107,7 +111,11 @@ bool eeprom_read_sequential(uint32_t address, uint8_t *byte, uint32_t size )
     bool flag;
     uint8_t *tx_data = (uint8_t*)malloc(2 * sizeof(uint8_t));
 
-    address = (address-1) & EEPROM_ADR_MASK;
+    if(address==0){
+        address=EEPROM_ADR_MASK;
+    }else{
+        address = (address-1) & EEPROM_ADR_MASK;
+    }
 
     uint8_t adr = EEPROM_TYPE_ID | ((address >> 16) << 1) | EEPROM_WRITE;
 

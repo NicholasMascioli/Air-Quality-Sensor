@@ -16,6 +16,7 @@ const ADC1        = ADC.addInstance();
 const GPIO        = scripting.addModule("/ti/drivers/GPIO");
 const GPIO2       = GPIO.addInstance();
 const GPIO3       = GPIO.addInstance();
+const GPIO8       = GPIO.addInstance();
 const I2C         = scripting.addModule("/ti/drivers/I2C");
 const I2C1        = I2C.addInstance();
 const Settings    = scripting.addModule("/ti/posix/tirtos/Settings");
@@ -45,8 +46,11 @@ GPIO2.$name     = "CONFIG_GPIO_LED_0";
 GPIO3.$name     = "CONFIG_GPIO_TMP_EN";
 GPIO3.$hardware = bp_BPBASSENSORSMKII.components.TMP117.subComponents.POWER;
 
-I2C1.$name     = "CONFIG_I2C_TMP";
-I2C1.$hardware = bp_BPBASSENSORSMKII.components.BP_BASSENSORSMKII_I2C;
+GPIO8.$name              = "CONFIG_GPIO_WP";
+GPIO8.mode               = "Output";
+GPIO8.initialOutputState = "High";
+
+I2C1.$name = "CONFIG_I2C_TMP";
 
 const CCFG              = scripting.addModule("/ti/devices/CCFG", {}, false);
 CCFG.ccfgTemplate.$name = "ti_devices_CCFG_CCFGCC26XXTemplate0";
@@ -95,7 +99,8 @@ Display1.uart.uart.rxPin.$suggestSolution = "boosterpack.3";
 ADC1.adc.$suggestSolution                 = "ADC0";
 GPIO2.gpioPin.$suggestSolution            = "boosterpack.39";
 GPIO3.gpioPin.$suggestSolution            = "boosterpack.28";
+GPIO8.gpioPin.$suggestSolution            = "boosterpack.19";
 I2C1.i2c.$suggestSolution                 = "I2C0";
-I2C1.i2c.sdaPin.$suggestSolution          = "boosterpack.10";
-I2C1.i2c.sclPin.$suggestSolution          = "boosterpack.9";
+I2C1.i2c.sdaPin.$suggestSolution          = "boosterpack.30";
+I2C1.i2c.sclPin.$suggestSolution          = "boosterpack.29";
 Timer.rtc.$suggestSolution                = "RTC0";
